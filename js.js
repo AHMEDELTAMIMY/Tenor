@@ -22,8 +22,10 @@ function getUserData(search_term){
 }
 function printUserData(data){
     let result = $('#result');
-    let url = data.results[0].media[0].gif.url;
-    let searchTenor = document.createElement('img');
-    searchTenor.setAttribute('src', url);
-    result.append(searchTenor);
+    for (var i=0; i< data.results.length ; i++){
+        let url = data.results[i].media[0].gif.url;
+        let searchTenor = document.createElement('img');
+        searchTenor.setAttribute('src', url);
+        result.append(searchTenor);
+    }
 }

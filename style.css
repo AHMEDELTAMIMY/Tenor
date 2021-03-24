@@ -1,12 +1,21 @@
 form{
     height: 80px;
+    margin-top: 50px;
+    margin-left: 300px;
 }
 #userInput{
     width: 600px;
     height: 30px;
+    border: 2px solid;
+    border-radius: 20px;
 }
 #searchBtn{
     width: 200px;
     height: 30px;
     background-color: aqua;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#result{
+    height: auto;
 }
